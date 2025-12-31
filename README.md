@@ -21,7 +21,7 @@ Install dependencies:
 
 Create a `.env` file and fill in the values:
 
-`AMAZON_PRODUCT_URL="https://www.amazon.com/dp/PRODUCT_ID"
+AMAZON_PRODUCT_URL="https://www.amazon.com/dp/PRODUCT_ID"
 
 BUY_PRICE=200.00
 
@@ -29,7 +29,7 @@ EMAIL_ADDRESS="your_email@example.com"
 
 EMAIL_PASSWORD="your_app_password"
 
-SMTP_ADDRESS="smtp.gmail.com"`
+SMTP_ADDRESS="smtp.gmail.com"
 
 
 _Tip: If you're using Gmail, enable App Password and use that instead of real password._
