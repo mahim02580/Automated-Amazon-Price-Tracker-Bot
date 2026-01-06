@@ -27,12 +27,11 @@ BUY_PRICE=200.00
 
 EMAIL_ADDRESS="your_email@example.com"
 
-EMAIL_PASSWORD="your_app_password"
+EMAIL_PASSWORD="EMAIL_PASSWORD_OR_APP_PASSWORD"
 
-SMTP_ADDRESS="smtp.gmail.com"
+SMTP_ADDRESS="SMTP_ADDRESS_OF_YOUR_MAIL_SERVER" e.g. "smtp.gmail.com" for Gmail
 
-
-_Tip: If you're using Gmail, enable App Password and use that instead of real password._
+_Tip: If you're using Gmail, enable App Password and use that instead of your real password._
 
 ### 🧠 How It Works
 
@@ -40,28 +39,15 @@ _Tip: If you're using Gmail, enable App Password and use that instead of real pa
 * Requests HTML from Amazon using realistic browser headers
 * Parses price and product title using BeautifulSoup
 * Compares with `BUY_PRICE`
-* Sends an email if current price is cheaper
+* Sends an email if the current price is cheaper
 
 ### ▶️ Run the Script
 `python main.py`
 
-#### You can also schedule it to run automatically:
-On Linux / macOS (cron)
-
-`crontab -e`
-
-Add:
-`0 */6 * * * python /path/to/main.py`
-
-
-On Windows (Task Scheduler)
-
-Create a basic task → run `python main.py` every few hours.
-
 ### 🛡️ Note
 Amazon may block scraping if requests are too frequent or headers are missing.
 Use responsibly, adhere to Amazon's Terms of Service.
-It might not work as expected if amazon makes any changes to its website!
+It might not work as expected if Amazon makes any changes to its website!
 
 ### 📬 Example Output (Email)
 
